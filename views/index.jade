@@ -1,0 +1,8 @@
+//- This is a hidden Jade Comment
+extends layout
+
+block content
+	.container(ng-app='app')
+		//- To add template html to a page we must use "''" double then single quotes
+		header(ng-include="'templates/header.html'")
+		.row(ui-view)

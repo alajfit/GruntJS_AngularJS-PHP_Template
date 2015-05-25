@@ -1,0 +1,21 @@
+<h3>{{title}}</h3>
+<h2>Home Page is Up and Running</h2>
+<ul>
+	<li ng-repeat="friend in friends">
+		<input type="text" ng-model="friend.name">
+		<input type="text" ng-model="friend.age">
+		<button ng-click="friends.splice($index,1)" class="btn btn-danger">-</button>
+	</li>
+</ul>
+
+<button ng-click="save()" class="btn btn-primary">Save</button>
+
+<hr />
+
+<br /><br /><br />
+<input type="text" ng-model="title">
+<br />
+<input tyle="text" ng-model="myValue">
+{{myValue}}
+<br/ ><br />
+<select ng-model="selectedValue" ng-options="value for value in items"></select>
